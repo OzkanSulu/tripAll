@@ -3,6 +3,7 @@
 html,::after,::before{
   box-sizing: border-box !important;
   overflow-x: hidden !important;
+  overflow-y: visible !important;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: visible !important;
 }
 
 code {

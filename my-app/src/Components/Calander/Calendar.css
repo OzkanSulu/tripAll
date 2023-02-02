@@ -1,0 +1,19 @@
+.dateContainer{
+    display: flex;
+    margin-left: 16.3rem;
+    position: absolute;
+    top: 530px;
+    z-index: 10;
+}
+.date{
+    position: relative;
+    border: 2px solid lightgray;
+    
+}
+
+.date.hidden{
+    position: relative;
+    background-color: white;
+    display: none;
+    transition: 2s ease-in-out;
+}
