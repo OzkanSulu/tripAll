@@ -1,0 +1,89 @@
+.header{
+background-color:#1a6781;
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+max-width: 100%;
+position: relative;
+
+}
+
+.headerContainer{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 6rem;
+}
+
+.headerList{
+    display: flex;
+    gap: 2rem;
+}
+
+.headerListItem{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.headerListItem.active{
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+.headerItems{
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.headerBtns{
+    margin-top: 1rem;
+}
+
+.headerBtns{
+    display: flex;
+}
+
+.headerSearch{
+    height: 70px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    color: lightgray;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 6rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    max-width: 50%;
+    z-index: 2;
+   
+}
+.searchItem{
+    display: flex;
+    gap: 1rem;
+}
+
+.headerSearch input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+.headerButton{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #febb02;
+    color: #febb02;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.icon{
+    cursor: pointer;
+}

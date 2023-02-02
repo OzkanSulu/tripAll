@@ -1,0 +1,13 @@
+
+.Button{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    background: none;
+    cursor: pointer;
+}
+.Button:nth-child(1){
+    margin-right: 1rem;
+}
