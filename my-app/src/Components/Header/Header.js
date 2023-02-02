@@ -4,6 +4,7 @@ import { FaBed, FaPlane, FaCar, FaCalendarCheck } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import Buttons from "../../helpers/Buttons";
 import { dayContext } from "../../context/dayContext";
+import { bookContext } from "../../context/bookingContext";
 
 
 export default function Header() {
@@ -13,10 +14,15 @@ export default function Header() {
 
   
   const {day,setDay} = useContext(dayContext)
+  const {adultRef,kidRef,roomRef,book,setBook} = useContext(bookContext)
 
   const handleToggle = (()=>{
     setDay(!day)
   })
+
+  const handleBook=()=>{
+    setBook(!book)
+  }
 
   const displayDay = ()=>{
     setDay(false)
@@ -73,9 +79,9 @@ export default function Header() {
          
         </div>
         
-        <div className="searchItem" onClick={displayDay}>
+        <div className="searchItem" onClick={displayDay & handleBook}>
           <BsPeopleFill className="icon" />
-          <span className="headerSearchText">2 adults 2 children 1 room</span>
+          <span className="headerSearchText">{adultRef.current}  {kidRef.current} {roomRef.current} </span>
         </div>
         <div className="" onClick={displayDay}>
           <button className="headerButton"> Search</button>
