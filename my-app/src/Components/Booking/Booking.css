@@ -1,0 +1,61 @@
+.booking{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.bookContainer{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 4px;
+}
+.bookItems{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+    
+}
+
+.bookButton{
+    display: flex;
+    flex-direction: row;
+}
+.bookItems button{
+    width: 50px;
+    border: none;
+    outline: none;
+    background-color: #febb02;
+    border-radius: 5px;
+    color: white;
+    height: 25px;
+    cursor: pointer;
+    
+}
+.bookItems p{
+    margin: 0 1rem;
+    color: lightgray;
+}
+
+.done{
+    
+   
+    height: 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.doneBtn{
+    border: none;
+    background-color: #febb02;
+    color: white;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}

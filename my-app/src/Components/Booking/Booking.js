@@ -1,37 +1,57 @@
 import React, { useContext } from "react";
 import { bookContext } from "../../context/bookingContext";
+import "./Booking.css"
 
 function Booking() {
-  
-  const {adultRef,kidRef,roomRef,book,setBook} = useContext(bookContext)
-
-  const closeBook = ()=>{
-    setBook(false)
-  }
+  const {
+    adultCount,
+    setAdultCount,
+    kidCount,
+    setKidCount,
+    roomCount,
+    setRoomCount,
+    book,
+   
+  } = useContext(bookContext);
 
   return (
-    <div className={`booking ${book?"active" : "hidden"}`}>
-      <div>
-        <div>
+    <div className={`booking ${!book ? "active" : "hidden"}`}>
+      <div className="bookContainer">
+      <div className="bookItems">
           <span>Adult:</span>
-          <button onClick={() =>adultRef.current++}>+</button>
-          <p>{adultRef.current}</p>
-          <button onClick={()=> adultRef>0 && adultRef.current--} >-</button>
+          <div className="bookButton">
+          <button onClick={() => setAdultCount(adultCount + 1)}>+</button>
+          <p>{adultCount}</p>
+          <button disabled={adultCount===1} onClick={() => adultCount > 1 && setAdultCount(adultCount - 1)}>
+            -
+          </button>
+          </div>
         </div>
-        <div>
+        <div className="bookItems">
           <span>Children:</span>
-          <button onClick={()=>kidRef.current++}>+</button>
-          <p>{kidRef.current}</p>
-          <button onClick={()=>kidRef.current>0&&kidRef.current--}>-</button>
+          <div className="bookButton">
+          <button onClick={() => setKidCount(kidCount + 1)}>+</button>
+          <p>{kidCount}</p>
+          <button disabled={kidCount===0} onClick={() => kidCount > 0 && setKidCount(kidCount - 1)}>
+            -
+          </button>
+          </div>
         </div>
-        <div>
+        <div className="bookItems">
           <span>Room:</span>
-          <button onClick={()=>roomRef.current++}>+</button>
-          <p>{roomRef.current}</p>
-          <button onClick={()=> roomRef.current&&roomRef.current--} >-</button>
+          <div className="bookButton">
+          <button onClick={() => setRoomCount(roomCount + 1)}>+</button>
+          <p>{roomCount}</p>
+          <button disabled={roomCount===1} onClick={() => roomCount > 1 && setRoomCount(roomCount - 1)}>
+            -
+          </button>
+          </div>
+        </div>
+        <div className="done">
+        <button onClick={""} className="doneBtn" >Done</button>
         </div>
       </div>
-      <button onClick={closeBook}>Done</button>
+      
     </div>
   );
 }

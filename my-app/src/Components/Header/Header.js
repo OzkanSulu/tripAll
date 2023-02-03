@@ -14,15 +14,23 @@ export default function Header() {
 
   
   const {day,setDay} = useContext(dayContext)
-  const {adultRef,kidRef,roomRef,book,setBook} = useContext(bookContext)
+  const {
+    adultCount,
+    setAdultCount,
+    kidCount,
+    setKidCount,
+    roomCount,
+    setRoomCount,
+    book,
+    setBook,
+  } = useContext(bookContext);
+ 
 
   const handleToggle = (()=>{
     setDay(!day)
   })
 
-  const handleBook=()=>{
-    setBook(!book)
-  }
+
 
   const displayDay = ()=>{
     setDay(false)
@@ -79,9 +87,9 @@ export default function Header() {
          
         </div>
         
-        <div className="searchItem" onClick={displayDay & handleBook}>
+        <div className="searchItem" onClick={displayDay}>
           <BsPeopleFill className="icon" />
-          <span className="headerSearchText">{adultRef.current}  {kidRef.current} {roomRef.current} </span>
+          <span className="headerSearchText">{`Adult:${adultCount} - Children:${kidCount} - Room:${roomCount}`}</span>
         </div>
         <div className="" onClick={displayDay}>
           <button className="headerButton"> Search</button>
