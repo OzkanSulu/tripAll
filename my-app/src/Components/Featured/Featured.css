@@ -10,13 +10,44 @@ max-width: fit-content;
 display: flex;
 flex-direction: column;
 gap:5px;
-
+cursor: pointer;
+margin-bottom: 3rem;
 
 }
-
+.fpHead{
+    display: flex;
+    justify-content: space-between;
+}
+.fpHead span{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+.fpRating{
+    display: flex;
+    gap: 10px;
+}
 .fpImg{
     max-width: 320px;
     border-radius: 20px;
     padding-bottom: .5rem;
     
+}
+
+.fpDesc{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: lightgray;
+
+}
+
+.fpName{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    
+}
+
+.fpPrice{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }

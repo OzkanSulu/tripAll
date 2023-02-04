@@ -1,9 +1,12 @@
 import React from 'react'
+import MailList from '../../Components/MailList/MailList'
 import "./Motel.css"
 
 function Motel() {
   return (
-    <div>Motel</div>
+    <div>
+      <MailList />
+    </div>
   )
 }
 

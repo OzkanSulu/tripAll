@@ -15,85 +15,119 @@ function Featured() {
         <div className="fpItem">
           <img src={hotels} alt="" className="fpImg" />
         </div>
+        <div className="fpHead">
         <span className="fpName">Hotel Cherry</span>
-        <span className="fpPrice">Starting from $100</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
           <span>9.1</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $100</span>
+        <span className="fpDesc">Impeccable luxury awaits you at Hotel Cherry, with spacious rooms, on-site dining, and breathtaking views of the city skyline.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
       </div>
       <div className="fp">
         <div className="fpItem">
           <img src={apartments} alt="" className="fpImg" />
         </div>
+        
+        <div className="fpHead">
         <span className="fpName">Apart Bossa</span>
-        <span className="fpPrice">Starting from $80</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
           <span>9.4</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $160</span>
+        <span className="fpDesc">Discover the beauty of the city at Apart Bossa, featuring stylish rooms and breathtaking views of the metropolis.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
+
       </div>
       <div className="fp">
         <div className="fpItem">
           <img src={villas} alt="" className="fpImg" />
         </div>
+        
+        <div className="fpHead">
         <span className="fpName">Villa Miles</span>
-        <span className="fpPrice">Starting from $280</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
-          <span>9.1</span>
+          <span>9.3</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $120</span>
+        <span className="fpDesc">Escape to a peaceful haven at The Villa Miles, surrounded by lush greenery, a private pool, and breathtaking views.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
+
       </div>
       <div className="fp">
         <div className="fpItem">
           <img src={resorts} alt="" className="fpImg" />
         </div>
+        
+        <div className="fpHead">
         <span className="fpName">Resort Swing</span>
-        <span className="fpPrice">Starting from $160</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
           <span>9.1</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $100</span>
+        <span className="fpDesc">Escape to the beach, featuring refreshing swimming pools, and easy access to the sand and surf.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
+
       </div>
       <div className="fp">
         <div className="fpItem">
           <img src={cabin} alt="" className="fpImg" />
         </div>
+        
+        <div className="fpHead">
         <span className="fpName">Cabin Bebop</span>
-        <span className="fpPrice">Starting from $200</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
-          <span>9.1</span>
+          <span>9.9</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $200</span>
+        <span className="fpDesc">Embrace the serenity of nature at Cabin Bebop, nestled in the heart of the forest, a warm fireplace, and breathtaking views.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
+
       </div>
       <div className="fp">
         <div className="fpItem">
           <img src={hotel1} alt="" className="fpImg" />
         </div>
+        
+        <div className="fpHead">
         <span className="fpName">Hotel Nocturne</span>
-        <span className="fpPrice">Starting from $140</span>
         <div className="fpRating">
           <span>
-            <FaStar />
+            <FaStar style={{color:"yellow"}}/>
           </span>
-          <span>9.1</span>
+          <span>9.9</span>
           <span>Excelent</span>
         </div>
+        </div>
+        <span className="fpPrice">Starting from $160</span>
+        <span className="fpDesc">Impeccable luxury awaits you at The Grand Hotel, with spacious rooms, on-site dining, and breathtaking views of the city skyline.</span>
+        <a href="/" style={{color:"#1A6781"}}>Read More...</a>
+
       </div>
     </div>
   );
