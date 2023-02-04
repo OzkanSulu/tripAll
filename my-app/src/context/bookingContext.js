@@ -8,9 +8,12 @@ export const BookProvider = ({ children }) => {
 const [kidCount, setKidCount] = useState(0);
 const [roomCount, setRoomCount] = useState(1);
   const [book, setBook] = useState(false);
+  const hideBook=()=>{
+    setBook(false)
+}
   
   return (
-    <bookContext.Provider value={{ adultCount, setAdultCount,kidCount, setKidCount,roomCount, setRoomCount,book, setBook}}>
+    <bookContext.Provider value={{ hideBook,adultCount, setAdultCount,kidCount, setKidCount,roomCount, setRoomCount,book, setBook}}>
       {children}
     </bookContext.Provider>
   );

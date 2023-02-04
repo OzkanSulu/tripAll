@@ -1,0 +1,22 @@
+.fpContainer{
+    display: flex;
+    margin-left: 6rem;
+    gap: 25px;
+}
+
+.fp{
+width: 100%;
+max-width: fit-content;
+display: flex;
+flex-direction: column;
+gap:5px;
+
+
+}
+
+.fpImg{
+    max-width: 320px;
+    border-radius: 20px;
+    padding-bottom: .5rem;
+    
+}

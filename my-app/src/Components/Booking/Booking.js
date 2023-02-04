@@ -11,11 +11,15 @@ function Booking() {
     roomCount,
     setRoomCount,
     book,
-   
+    setBook
   } = useContext(bookContext);
 
+  const handleBook = () =>{
+    setBook(!book)
+  }
+
   return (
-    <div className={`booking ${!book ? "active" : "hidden"}`}>
+    <div className={`booking ${book ? "active" : "hidden"}`}>
       <div className="bookContainer">
       <div className="bookItems">
           <span>Adult:</span>
@@ -48,7 +52,7 @@ function Booking() {
           </div>
         </div>
         <div className="done">
-        <button onClick={""} className="doneBtn" >Done</button>
+        <button onClick={handleBook} className="doneBtn" >Done</button>
         </div>
       </div>
       

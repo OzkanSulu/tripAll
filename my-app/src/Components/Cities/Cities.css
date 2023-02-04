@@ -1,0 +1,47 @@
+.featured{
+width: 100%;
+position: relative;
+justify-content: center;
+
+    
+}
+.featuredContainer{
+    width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    position: relative;
+}
+.featuredItem{
+    width: 30%;
+    cursor: pointer;
+}
+
+.featuredImg{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.featuredTitles{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 15px;
+    color: #E6E6E6;
+    letter-spacing: .1cm;
+}
+
+.propContainer{
+    display: flex;
+    width: 1330px;
+    gap: 15px;
+    margin: 0 6rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+
+.hotels :hover, .apartments :hover, .villas :hover, .resorts :hover, .cabin :hover{
+    transform: scale(1.005);
+}
