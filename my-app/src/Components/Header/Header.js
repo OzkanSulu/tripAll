@@ -42,7 +42,8 @@ export default function Header() {
     setDay(false)
     setBook(false)
   }
-
+  
+    
   return (
     <div className="header">
       <div>

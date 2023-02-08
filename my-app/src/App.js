@@ -6,17 +6,21 @@ import { BookProvider } from "./context/bookingContext";
 import Motel from "./Pages/Motel/Motel";
 import Footer from "./Pages/Footer/Footer";
 
+
 function App() {
   return (
     <div>
-      <DayProvider>
-        <BookProvider>
-          <Home />
-          <Hotels />
-        </BookProvider>
-        <Motel />
-        <Footer />
-      </DayProvider>
+      
+        <DayProvider>
+          <BookProvider>
+            <Home />
+            <Hotels />
+          </BookProvider>
+          <Motel />
+          <Footer />
+          
+        </DayProvider>
+      
     </div>
   );
 }

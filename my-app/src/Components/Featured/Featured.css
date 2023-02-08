@@ -1,9 +1,44 @@
+.fpList{
+    position: relative;
+}
+
 .fpContainer{
     display: flex;
     margin-left: 6rem;
     gap: 25px;
+    transition: all 1s ease;
 }
 
+.arrow{
+position: absolute;
+width: fit-content;
+top: 0;
+bottom: 0;
+margin: auto;
+background-color: rgb(22,22,22,0.2);
+border-radius: 5px;
+cursor: pointer;
+z-index: 99;
+}
+
+.left{
+width: 48px;
+height: 100%;
+top: 0;
+bottom: 0;
+margin: auto;
+left: 1px;
+color: white;
+}
+.right{
+width: 48px;
+height: 100%;
+top: 0;
+bottom: 0;
+color: white;
+margin: auto;
+right: 1px;
+}
 .fp{
 width: 100%;
 max-width: fit-content;
@@ -50,4 +85,13 @@ margin-bottom: 3rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+
+.slideBtn{
+    font-size: 36px;
+    
+    position: absolute;
+    right: 0px;
+    
+    border: 1px solid lightgray;
 }

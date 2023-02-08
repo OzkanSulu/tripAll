@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Footer.css"
 
 export default function Footer() {
   return (
@@ -44,7 +45,11 @@ export default function Footer() {
                 <li className='fListItem'> Airports</li>
                 <li className='fListItem'> Hotels</li>
             </ul>
+            
         </div>
+        <div className='copyRight' style={{marginLeft:"6rem"}}>
+                <p>Copyright © 2023 Ozkan Sulu</p>
+            </div>
     </div>
   )
 }
